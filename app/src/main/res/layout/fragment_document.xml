@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Tùy chọn bộ lọc"
+                android:textColor="@color/back_1"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_border_gray_3dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="8dp"
+                        android:layout_toStartOf="@+id/lnDate"
+                        android:text="Chọn ngày"
+                        android:textColor="@color/back_1"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlDate"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/bg_border_gray_3dp"
+                        android:orientation="horizontal"
+                        android:padding="7dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_toStartOf="@+id/vv"
+                            android:id="@+id/tvDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="05-04-2020"
+                            android:textColor="@color/back_1"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="16dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/vv"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="3dp"
+                            android:src="@drawable/ic_down_arrow"
+                            android:tint="@color/back_1" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:minWidth="50dp"
+                        android:singleLine="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/rlAccount"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/tv_customer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Tên khách hàng"
+                        android:textColor="@color/back_1"
+                        android:textSize="16sp" />
+                    <LinearLayout
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/rlAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/bg_border_gray_3dp"
+                        android:orientation="horizontal"
+                        android:padding="7dp"
+                        android:visibility="visible">
+                        <TextView
+
+                            android:id="@+id/tvAcount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Chọn khách hàng"
+                            android:textColor="@color/back_1"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/ivArrowChonKH"
+                            android:layout_width="12dp"
+                            android:layout_height="16dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="3dp"
+                            android:src="@drawable/ic_down_arrow"
+                            android:tint="@color/back_1" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/rg_account_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <RadioButton
+                            android:textSize="15sp"
+                            android:id="@+id/rbNhanVe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nhận về" />
+
+                        <RadioButton
+
+                            android:textSize="15sp"
+                            android:id="@+id/rbChuyenDi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuyển đi" />
+
+                        <RadioButton
+                            android:textSize="15sp"
+                            android:id="@+id/rbGiuLai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Giữ lại" />
+
+                        <RadioButton
+                            android:textSize="15sp"
+                            android:id="@+id/rbTatCa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Tất cả" />
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btnGetData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Lấy dữ liệu" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/table_detail"/>
+            <include layout="@layout/table_detail_all"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

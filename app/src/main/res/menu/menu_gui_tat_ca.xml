@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/copyAllSmS"
+        android:title="Sao chép tất cả tin nhắn"/>
+    <item
+        android:id="@+id/sendAllSms"
+        android:title="Gửi tất cả tin nhắn"/>
+</menu>

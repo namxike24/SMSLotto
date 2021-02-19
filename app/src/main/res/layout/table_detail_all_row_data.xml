@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17"
+        android:background="@drawable/border_row"
+        android:gravity="left"
+        android:padding="4dp"
+        android:text="Loại"
+        android:textColor="@color/back_1"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-medium" />
+    <TextView
+        android:id="@+id/tvNhanVeDiem"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:background="@drawable/border_row"
+        android:gravity="right"
+        android:padding="4dp"
+        android:text=""
+        android:textColor="@color/back_1"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvNhanVeThanhTien"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:background="@drawable/border_row"
+        android:gravity="right"
+        android:padding="4dp"
+        android:textColor="@color/back_1"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/tvChuyenDiDiem"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:background="@drawable/border_row"
+        android:gravity="right"
+        android:padding="4dp"
+        android:text=""
+        android:textColor="@color/back_1"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvChuyenDiThanhTien"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:background="@drawable/border_row"
+        android:gravity="right"
+        android:padding="4dp"
+        android:textColor="@color/back_1"
+        android:textSize="12sp" />
+
+</TableRow>

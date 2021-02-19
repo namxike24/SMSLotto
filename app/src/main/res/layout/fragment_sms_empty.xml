@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smsanalytic.lotto.ui.smsProcess.SmsEmptyFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSmsEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/mes_empty"
+        android:padding="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/back_1"
+        android:textSize="16dp"
+        android:text="- Hiện không có tin nhắn nào đã xử lý thành công\n- Tin xử lý thành công là những tin đúng cú pháp mà phần mềm tự động xử lý được và những tin sai cú pháp đã được sửa lại đúng cú pháp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_border_gray_3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

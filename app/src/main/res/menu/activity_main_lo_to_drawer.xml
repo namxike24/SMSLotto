@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sms_process"
+            android:icon="@drawable/ic_xulysms"
+            android:title="@string/tv_process_sms" />
+        <item
+            android:id="@+id/nav_sms_management"
+            android:icon="@drawable/ic_quanlysms"
+            android:title="@string/tv_sms_management" />
+        <item
+            android:id="@+id/nav_document"
+            android:icon="@drawable/ic_document"
+            android:title="@string/tv_document" />
+        <item
+            android:id="@+id/nav_balance"
+            android:icon="@drawable/ic_canchuyen"
+            android:title="@string/tv_balance" />
+        <item
+            android:id="@+id/nav_xsmb"
+            android:icon="@drawable/ic_laykqxs"
+            android:title="@string/tv_xsbm" />
+        <item
+            android:id="@+id/nav_debt"
+            android:icon="@drawable/ic_congno"
+            android:title="@string/tv_debt" />
+        <item
+            android:id="@+id/nav_sms_detail"
+            android:icon="@drawable/ic_email_detail"
+            android:title="@string/tv_sms_detail" />
+        <item
+            android:id="@+id/nav_account_list"
+            android:icon="@drawable/ic_account_list"
+            android:title="@string/tv_account_list" />
+
+
+
+
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_setting"
+            android:title="@string/tv_setting" />
+        <item
+            android:id="@+id/nav_sms_social"
+            android:icon="@drawable/ic_smssocial"
+            android:title="@string/tv_sms_social" />
+        <item
+            android:id="@+id/nav_async"
+            android:icon="@drawable/ic_aync"
+            android:title="@string/tv_async" />
+        <item
+            android:id="@+id/nav_character"
+            android:icon="@drawable/ic_thaythekytu"
+            android:title="@string/tv_character" />
+
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/ic_add_user"
+            android:title="@string/tv_register" />
+
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@drawable/ic_update"
+            android:title="@string/tv_update_app" />
+<!--        <item-->
+<!--            android:id="@+id/nav_logout"-->
+<!--            android:icon="@drawable/ic_logout"-->
+<!--            android:title="@string/tv_logout" />-->
+    </group>
+
+
+</menu>

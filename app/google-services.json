@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "810505559069",
+    "firebase_url": "https://lottovip-940e2.firebaseio.com",
+    "project_id": "lottovip-940e2",
+    "storage_bucket": "lottovip-940e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810505559069:android:42e6446b1f54b7aed6faf4",
+        "android_client_info": {
+          "package_name": "smsmanagementsystem.smsanalytic.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810505559069-tdk2tr041sfk98bi6br875jc9qjool1t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp6gBS-WXxmHYMVjubWCRdgB8lQaQ4yYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810505559069-tdk2tr041sfk98bi6br875jc9qjool1t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

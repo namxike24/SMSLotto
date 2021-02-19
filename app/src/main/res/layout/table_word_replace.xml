@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvSTT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="STT"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+         android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvCumTu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+         android:fontFamily="sans-serif-medium"
+        android:text="Cụm từ"
+        android:textColor="@color/back_1"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvDuocThayBang"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+         android:fontFamily="sans-serif-medium"
+        android:padding="4dp"
+        android:text="Được thay bằng"
+        android:textColor="@color/back_1"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/tvXoa"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Xóa"
+        android:textColor="@color/back_1"
+        android:textSize="13sp" />
+
+</TableRow>

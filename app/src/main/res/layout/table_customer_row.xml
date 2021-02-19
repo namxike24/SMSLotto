@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_row"
+        android:gravity="left|center_vertical"
+        android:padding="8dp"
+        android:textColor="@color/back_1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvDelete"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Xóa"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="15sp" />
+
+
+</TableRow>

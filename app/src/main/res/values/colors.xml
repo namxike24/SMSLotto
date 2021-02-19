@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1069B9</color>
+    <color name="colorPrimaryDark">#03579F</color>
+    <color name="colorAccent">#0084FF</color>
+    <color name="blue">#1069B9</color>
+    <color name="line_gray">#dbd5c8</color>
+    <color name="line_1_gray">#f2f2f2</color>
+    <color name="line_2_gray">#fdfefc</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#0084FF</color>
+    <color name="dark_green">#2a927a</color>
+    <color name="red">#cc0000</color>
+    <color name="red_light">#ff0000</color>
+    <color name="gray">#CFCFCF</color>
+    <color name="light_green">#ccff99</color>
+    <color name="light_yellow">#ffffcc</color>
+    <color name="orange">#e57e50</color>
+    <color name="orange_75">#bfe57e50</color>
+    <color name="yellow">#fffe06</color>
+    <color name="black_4">#24262E</color>
+    <color name="back_1">#090808</color>
+    <color name="back_2">#2A2D37</color>
+    <color name="green_2">#95ABAF</color>
+    <color name="black_3">#444444</color>
+    <color name="green_3">#AFD476</color>
+<!--    #1877F2-->
+
+    <color name="orange_3">#F9AA22</color>
+    <color name="green_70">#B322b756</color>
+
+    <color name="bg_header">#b4a96e</color>
+    <color name="red_dark">#cc0202</color>
+    <color name="green_dark">#007600</color>
+    <color name="blue_dark">#0100fe</color>
+    <color name="blue_2">#0E4077</color>
+    <color name="blue_3">#49ACC3</color>
+
+    <color name="blue_4">#4EA8F8</color>
+    <color name="blue_5">#A8CBFC</color>
+    <color name="gray_5">#F1F1F1</color>
+    <color name="gray_4">#E0E0E0</color>
+
+    <!--    100% — FF
+    95% — F2
+    90% — E6
+    85% — D9
+    80% — CC
+    75% — BF
+    70% — B3
+    65% — A6
+    60% — 99
+    55% — 8C
+    50% — 80
+    45% — 73
+    40% — 66
+    35% — 59
+    30% — 4D
+    25% — 40
+    20% — 33
+    15% — 26
+    10% — 1A
+    5% — 0D
+    0% — 00-->
+
+    <color name="orange_1">#AE9A36</color>
+</resources>

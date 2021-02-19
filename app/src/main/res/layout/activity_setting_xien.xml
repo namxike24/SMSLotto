@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smsanalytic.lotto.ui.setting.SettingKyTuSMSGuiDiActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/tvGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/btnBack"
+            android:singleLine="true"
+            android:text="Cài đặt tin nhắn"
+            android:textColor="@color/line_1_gray"
+            android:textSize="16sp"
+             android:fontFamily="sans-serif-medium" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="1. Cài đặt đơn vị tính"
+            android:textColor="@color/back_1"
+            android:textSize="16sp"
+             android:fontFamily="sans-serif-medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_border_gray_full_3dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_caidatdonvitinh_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Vì mỗi vùng miền có sự khác nhau vui lòng lựa chọn vùng(miền) của bạn hiện 1 điểm đang hiểu là bao nhiêu nghìn"
+                android:textColor="@color/back_1"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/groupDonViTinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/rb10Nghin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/tv_1d_10n" />
+
+                <RadioButton
+                    android:id="@+id/rb1Nghin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_1d_1n" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:text="2. Chuyển xiên đi bằng"
+            android:textColor="@color/back_1"
+            android:textSize="16sp"
+             android:fontFamily="sans-serif-medium" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_border_gray_full_3dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_caidatdonvitinh_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Mặc định chúng tôi sẽ quy về nghìn khi chuyển đi. Nếu muốn thay đỏi vui lòng chọn lại"
+                android:textColor="@color/back_1"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/groupChuyenXien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/rbChyenXienN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/tv_chuyen_xien_n" />
+
+                <RadioButton
+                    android:id="@+id/rbChyenXienD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chuyển xiên đi bằng điểm (d)" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_border_green_3dp"
+        android:gravity="center"
+        android:text="Cập Nhật"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

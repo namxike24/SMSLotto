@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    tools:context="com.smsanalytic.lotto.ui.accountList.AddAccountActivity"
+    android:focusable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="Khách hàng"
+            android:id="@+id/tvCustomer"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_border_green_3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"/>
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="Nhập dữ liệu"
+            android:id="@+id/tvAddData"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_border_green_3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="Báo cáo"
+            android:id="@+id/tvReport"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_border_green_3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_height="100dp"/>
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="Thông tin"
+            android:id="@+id/tvInfo"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_border_green_3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+</LinearLayout>

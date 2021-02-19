@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">BetXS</string>
+    <string name="tv_process_sms">Xử lý tin nhắn</string>
+    <string name="tv_sms_management">Quản lý tin nhắn</string>
+    <string name="tv_sms_social">Mạng xã hội</string>
+    <string name="tv_document">Tổng hợp số liệu</string>
+    <string name="tv_account_list">Danh sách khách hàng</string>
+    <string name="tv_balance">Cân chuyển</string>
+    <string name="tv_xsbm">Lấy kêt quả XSMB</string>
+    <string name="tv_debt">Công nợ, Lãi lỗ</string>
+    <string name="tv_setting">Cài đặt</string>
+    <string name="tv_character">Ký tự thay thế</string>
+    <string name="tv_sms_detail">Chi tiết tin nhắn</string>
+    <string name="tv_register">Đăng ký sử dụng</string>
+    <string name="tv_async">Sao chép phục hồi dữ liệu</string>
+    <string name="tv_update_app">Cập nhật ứng dụng</string>
+    <string name="tv_logout">Thoát</string>
+
+    <string name="tv_loto">BetXS</string>
+
+
+    <string name="image_change_explanaton">The Image bellow will change when a Notification is intercepted</string>
+
+    <!-- Placeholder string for if the image doesn't load -->
+    <string name="notification_logo">Intercepted Notification Logo</string>
+
+    <!-- Strings related to the Alert Dialog -->
+    <string name="notification_listener_service">"Cho phép mở bật thông báo "</string>
+    <string name="notification_listener_service_explanation">"Bạn phải mở thông báo nếu muốn nhận được tin nhắn."</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_add_account">Thêm khách hàng</string>
+    <string name="tv_update_account">Sửa thông tin khách hàng</string>
+    <string name="tv_account_name">Tên khánh hàng</string>
+    <string name="hint_enter_account_name">Nhập tên khách hàng</string>
+    <string name="tv_you_call_them">Bạn gọi người này là</string>
+    <string name="hint_you_call_them_examle">Ví dụ: Em, bạn, chú, cô, cháu...</string>
+    <string name="tv_them_call_you">Người này gọi bạn là</string>
+    <string name="tv_phone_info">Thông tin số điện thoại</string>
+    <string name="hint_enter_phone_name">Nhập số điện thoại</string>
+    <string name="tv_contact">Danh bạ</string>
+    <string name="tv_add">Thêm</string>
+    <string name="format_money_vnd">%s đ</string>
+    <string name="tv_phone_number">Số điện thoại: %s</string>
+    <string name="tv_sms_success">Đã xử lý thành công %d/%d tin nhắn</string>
+    <string name="tv_error_detail">Chi tiết lỗi \n %s</string>
+
+    <string name="html_color_format" formatted="false"><![CDATA[<font color=\'%s\'>%s</font>]]></string>
+    <string name="html_loto_hit" formatted="false"><![CDATA[<b><font  color=#cc0000 >%s</font></b>]]></string>
+    <string name="process_message_to_original">Phục hồi tin gốc</string>
+    <string name="process_message_process_and_save">Xử lý và lưu</string>
+    <string name="process_message_result">Kết quả xử lý:</string>
+    <string name="process_message_total">Toàn bộ:</string>
+    <string name="tv_format_donvi">%s%s</string>
+    <string name="tv_format_present">%d%%</string>
+    <string name="process_message_description">Để phần mềm hiểu và tính được tiền và thực hiện các công việc khác buộc tất cả các tin nhắn đều phải xử lý thành công.
+    Để thực hiện được việc này vui lòng bạn sửa tin nhắn theo cú pháp chuẩn của phần mềm tại phần Hướng dẫn sử dụng -> tin nhắn mẫu</string>
+    <string name="tv_ngoai_le_error">Bạn nhập giữ lại ngoại lệ chưa đúng vui lòng xem lại. Ngoại lệ chỉ chấp nhận Đề, Đầu Đb, Lô, Lô Đầu, Giải Nhất</string>
+    <string name="tv_khong_du_lieu_can_chuyen"><![CDATA[<b><font color=#cc0000>KHÔNG CÓ DỮ LIỆU CÂN CHUYỂN: </font></b><font color=#24262E>Để chắc chắn vui lòng kiểm tra lại hoặc đóng hẳn phần mềm xong mở lại để thực hiện điều này</font>]]></string>
+    <string name="tv_gui_den">Gửi đến: %s</string>
+
+    <string name="tv_de_detail"><![CDATA[<b>%s: <font color=#cc0000>Th  %s</font><font color=#24262E> / </font><font color=#0100fe>%s%s</font></b><br/>]]></string>
+    <string name="tv_de_thanhTien">%s: %s%s = %s%s </string>
+    <string name="tv_de_trung">Th %s: %s%s = %s%s </string>
+
+    <string name="tv_de_don_gian">%s: %s%s (%s%s) </string>
+
+
+    <string name="character_note_default">Ngoài những thuật ngữ mà ứng dụng đã hiểu như De, Lo, Xien, Ba cang, Nhân(x), %s, d thì chúng tôi cho phép người dùng có thể thêm các thuật ngữ địa phương của bạn vào ứng dụng để lần sau mỗi khi có tin nhắn đến thì các từ trong tin nhắn sẽ được thay thế. \nVí dụ có tin nhắn đến là “xuyen 2 23 32 x 20%s” thì bạn chỉ cần thay “xuyen” = “xien” \n“Ghi em con đặc biệt 68 86 x 100%s” thì bạn chỉ cần thay “Ghi em con đặc biệt” = “de”.</string>
+    <string name="character_note_custom">Bạn phải chịu trách nhiệm hoàn toàn về các bộ ký tự thay thế mà bạn đã soạn.</string>
+    <string name="tv_account_format">Khách hàng: %s</string>
+    <string name="tv_deb_des">Dữ liệu tính toán từ ngày %s đến ngày %s</string>
+    <string name="tv_hh_mm">%d:%d</string>
+    <string name="facebook_app_id">2300372323591664</string>
+    <string name="sms_to">Tin nhắn sẽ gửi cho %s</string>
+    <string name="sent">ĐÃ GỬI</string>
+
+    <string name="sms_quydinh"><![CDATA[<b>A.</b> LOTO SMART được xây dựng nhằm phục vụ cho các đại lý xổ số tính toán số liệu của khách hàng nhanh chóng và tiện lợi hơn. Tác giả hoàn toàn không chịu trách nhiệm nếu người sử dụng dùng phần mềm vào mục đích vi phạm pháp luật nhà nước CHXH Chủ Nghĩa Việt Nam, Nhật Bản, Hàn Quốc, Đài Loan nghiêm cấm. Vì đảm bảo sự tôn trọng ngôn từ dân dã, đường phố, do vậy trong phần mềm có thể sử dụng một số từ khác với cách gọi trong Xổ Số truyền thống.<br><br> <b>B.</b> Chính sách bảo mật và Sự riêng tư của khách hàng: <br><b>I.</b> Tin nhắn SMS được gọi là các tin nhắn. <br><b>II</b>. Phần mềm của chúng tôi là một công cụ xử lý, đọc và gửi tin nhắn SMS, vì vậy khi chấp nhận việc sử dụng ứng dụng này, bạn đã đồng ý một cách rõ ràng với các điều khoản dưới đây: <br> - Theo mặc định, sau khi cài đặt, ứng dụng không tự động gửi bất kỳ tin nhắn nào. <br> - Ứng dụng không tự động gửi tin nhắn trong khi bạn vẫn chưa bật cài đặt thích hợp. <br> - Khi bạn sửa đổi cài đặt thích hợp trong ứng dụng, sau đó ứng dụng có thể lập trình gửi tin nhắn trong các trường hợp sau, và tất cả các tin nhắn đã gửi được lưu trữ trong OUTBOX của hệ thống của bạn. Như vậy, bạn dự trữ tất cả các quyền cho phép ứng dụng gửi tin nhắn hoặc không: <br><b>1</b>. Tự động gửi tin nhắn đến người gửi để xác nhận số lượng tin nhắn đã nhận sau khi xử lý tin nhắn. <br><b>2.</b> Tự động gửi thông báo báo cáo đến người gửi theo cài đặt đặt trước. Để đối phó với thất bại trong trường hợp các kết nối mạng xấu, ứng dụng cung cấp tính năng khôi phục lỗi, cho phép gửi lại tin nhắn với tối đa 3 lần thử lại.\nTất cả các tin nhắn và địa chỉ liên lạc trên thiết bị của bạn chỉ được đọc / ghi một cách cục bộ (chỉ trên thiết bị của bạn) để phân tích dữ liệu và xuất báo cáo. Chúng tôi không thu thập / thu thập / lưu trữ thông tin cá nhân này. <br>Chúng tôi lưu trữ các thông tin sau đây được thu thập trên thiết bị của bạn: <br>- Thiết bị IMEI. <br>- Số thẻ SIM. <br>- Phiên bản hệ điều hành hiện tại. <br>Tất cả dữ liệu ở trên được sử dụng cho các hoạt động xử lý nội bộ, cải tiến các dịch vụ chăm sóc khách hàng và phát triển các phiên bản tiếp theo của ứng dụng.]]> </string>
+    <string name="sms_tin_cho_empty">- Hiện không có tin nhắn nào đang chờ xử lý\n- Tin chờ là những tin sai cú pháp mà phầm mềm không hiểu, bạn phải sửa lại đúng cú pháp để PM hiểu được\n- Tin trống là tin không có nghĩa hoặc tạm thời bỏ qua để xử lý sau</string>
+    <string name="sms_tin_trong_empty">- Hiện không có tin nào trống\n- Tin trống là những tin không có nghĩa, không mang giá trị về số liệu hoặc những tin tạm thời bạn chưa muốn xử lý, sẽ xử lý sau\n- Muốn xử lý tin trống thành tin Đã xử lý thành công bạn Click vào tin cần xử lý =>> Xử lý tin này</string>
+    <string name="sms_tin_da_xu_ly_empty">- Hiện không có tin nhắn nào đã xử lý thành công\n- Tin xử lý thành công là những tin đúng cú pháp mà phần mềm tự động xử lý được và những tin sai cú pháp đã được sửa lại đúng cú pháp</string>
+    <string name="sms_saoluu">- Sao lưu số liệu rất quan trọng bởi vì có những tình huống không thể đoán trước được như ứng dụng bị lỗi bạn phải xóa để cài lại..lúc đấy dữ liệu công nợ và danh sách khách hàng sẽ bị mất, bạn phải mất thời gian thêm lại danh sách khách hàng, công nợ. Bạn nên thực hiện việc sao lưu số liệu hàng ngày Sẽ không thể tuyệt vời hơn nếu bạn đã có một bản sao này. Một bản sao lưu đơn giản có thể là “cứu cánh” cho mỗi lần bạn cài lại ứng dụng, chỉ cần 1 cú Click “Phục hồi số liệu” \n- Xóa tất cả số liệu là bao gồm: Tất cả tin nhắn và công nợ</string>
+    <string name="hint_NL_GiuLonNhat">Nhập số ngoại lệ ở đây, ví dụ: Đề đầu 1 x 100%s, tổng 8 x 50%s. Lô 22 68 86 x 200d</string>
+    <string name="nghin_con">(%s/%s)</string>
+    <string name="caidat_hoahong"> Cài đặt Hoa hồng và Trả thưởng (%s=%s)</string>
+
+    <string name="nocu_fomart">Nợ cũ (%s)</string>
+    <string name="phatsinh_fomart">Phát sinh (%s)</string>
+    <string name="conlai_fomart">Còn lại (%s)</string>
+
+    <string name="tv_chapnhandonvilo">5. Chấp nhận đơn vị lô là %s</string>
+    <string name="de_fomart">Đề (%s)</string>
+    <string name="lo_fomart">Lô (%s)</string>
+    <string name="xien_fomart">Xiên (%s)</string>
+    <string name="bacang_fomart">Ba Càng (%s)</string>
+    <string name="tatca_fomart">Tất cả (%s)</string>
+
+    <string name="note_debt" ><![CDATA[- Đơn vị tính là nghìn đồng nên ở ô nhập thu,chi thì 2,000,000 đồng thì bạn chỉ nhập là 2000\n- Đối với những khác hàng hiện đang có công nợ với bạn trước lúc bạn sử dụng phần mềm này thì bạn chỉ cần nhập số nợ đó vào ô <font color=#cc0000>"Thêm khoản chi"</font> nếu như đại lý đấy đang thiếu nợ bạn và ngược lại nhập vào ô <font color=#49ACC3>"Thêm khoản thu"</font> nếu như bạn đang thiếu nợ đại lý\n - "Thu" và "Chi" ở đây là giao dịch bằng tiền mặt, ngân hàng hoặc tài sản]]></string>
+    <string name="note_debt_tiente" ><![CDATA[- Đơn vị tính là %s nên ở ô nhập thu,chi thì 100 %s thì bạn chỉ nhập là 100\n- Đối với những khác hàng hiện đang có công nợ với bạn trước lúc bạn sử dụng phần mềm này thì bạn chỉ cần nhập số nợ đó vào ô <font color=#cc0000>"Thêm khoản chi"</font> nếu như đại lý đấy đang thiếu nợ bạn và ngược lại nhập vào ô <font color=#49ACC3>"Thêm khoản thu"</font> nếu như bạn đang thiếu nợ đại lý\n - "Thu" và "Chi" ở đây là giao dịch bằng tiền mặt, ngân hàng hoặc tài sản]]></string>
+    <string name="tv_1d_10n">1điểm(1d) = 10 %s(10%s)</string>
+    <string name="tv_1d_1n">1điểm(1d) = 1 %s(1%s)</string>
+    <string name="tv_chuyen_xien_n">Chuyển xiên đi bằng %s (%s)</string>
+    <string name="tv_duongdan_theokhuc">- Bước 1: Chọn khúc(Số thứ tự theo sắp xếp giá nhận về)\n - Bước 2: Chọn Max giữ lại(Mặc định là điểm với Lô và theo %s với các loại hình khác)\n - Bước 3: Chọn loại hình muốn cân => LẤY DỮ LIỆU\n - Bước 4: Bấm "CHUYỂN" ở góc trên cùng bên phải để ra tin nhắn cần chuyển.\n Bước 5: Chọn người nhận tin nhắn và bấm "CHUYỂN"</string>
+    <string name="tv_caidatdonvitinh_1">Vì mỗi vùng miền có sự khác nhau vui lòng lựa chọn vùng(miền) của bạn hiện 1 điểm đang hiểu là bao nhiêu %s</string>
+    <string name="tv_caidatdonvitinh_2">Mặc định chúng tôi sẽ quy về %s khi chuyển đi. Nếu muốn thay đỏi vui lòng chọn lại</string>
+    <string name="format_copy_imei">- Phiên bản :1.0 (%s)\n- Imei:%s</string>
+
+    <string name="html_total_all_black" formatted="false"><![CDATA[Tổng tất cả: <font color=\'#0084FF\'>%s</font>]]></string>
+    <string name="html_total_all_red" formatted="false"><![CDATA[Tổng tất cả: <font color=\'#ff0000\'>%s</font>]]></string>
+</resources>

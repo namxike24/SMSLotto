@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smsanalytic.lotto.ui.accountList.AddAccountActivity"
+    android:focusable="true">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/btnBack"
+            android:orientation="vertical">
+
+            <TextView
+                  android:fontFamily="sans-serif-medium"
+                android:id="@+id/tvGroupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/tv_add_account"
+                android:textColor="@color/line_1_gray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/btnAdd"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabLayout
+            android:background="@color/white"
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:textAlignment="textStart"
+            app:tabInlineLabel="true"
+            app:tabPaddingStart="10dp"
+            android:layout_height="?attr/actionBarSize"
+            app:tabSelectedTextColor="@color/back_1">
+        </com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:background="@color/white"
+            android:layout_below="@id/tab_layout"
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="@string/tv_add"
+        android:id="@+id/btnAdd"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_border_green_3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</RelativeLayout>

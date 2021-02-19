@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.asyncData.AsyncDataFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:lineSpacingExtra="1dp"
+        android:text="@string/sms_saoluu"
+        android:textColor="@color/back_1"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvDeleteData"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_border_red_3dp"
+        android:gravity="center"
+        android:text="Xóa tất cả dữ liệu"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvAsyncData"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_border_orange_3dp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:text="Phục hồi số liệu"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvSaveData"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_border_green_3dp"
+        android:gravity="center"
+        android:text="Sao lưu số liệu"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

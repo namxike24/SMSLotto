@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row_title"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Ngày"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvNoCu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row_title"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Nợ cũ"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvThu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row_title"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Thu"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvChi"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row_title"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Chi"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvPhatSinh"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row_title"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Phát Sinh"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+    <TextView
+        android:id="@+id/tvConLai"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row_title"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Còn lại"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+</TableRow>

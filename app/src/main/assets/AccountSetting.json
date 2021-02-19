@@ -1,0 +1,211 @@
+{
+  "phantichtindendi": [
+    {
+      "id": 1,
+      "text": "Tự động phân tích",
+      "selected": true
+    },
+    {
+      "id": 2,
+      "text": "Không tự động",
+      "selected": false
+    }
+  ],
+  "traloitinnhan": [
+    {
+      "id": 1,
+      "text": "Không trả lời",
+      "selected": false
+    },
+    {
+      "id": 2,
+      "text": "Ok",
+      "selected": true
+    },
+    {
+      "id": 3,
+      "text": "Ok số tin",
+      "selected": false
+    },
+    {
+      "id": 4,
+      "text": "Đếm tin đã xử lý thành công",
+      "selected": false
+    },
+    {
+      "id": 5,
+      "text": "Trích dẫn tin sau khi xử lý",
+      "selected": false
+    },
+    {
+      "id": 6,
+      "text": "Trích dẫn nội dung nhận được",
+      "selected": false
+    }
+  ],
+  "kieubaocongno": [
+    {
+      "id": 1,
+      "text": "Báo kèm nợ cũ chi tiết",
+      "selected": false
+    },
+    {
+      "id": 2,
+      "text": "Báo kèm nợ cũ đơn giản",
+      "selected": true
+    },
+    {
+      "id": 3,
+      "text": "Chỉ báo công nợ trong ngày",
+      "selected": false
+    }
+  ],
+  "chuyende78": [
+    {
+      "id": 1,
+      "text": "Hệ số = 1 (1 ăn 70)",
+      "selected": true
+    },
+    {
+      "id": 2,
+      "text": "Hệ số = 1,1 (1 ăn 77)",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "text": "Hệ số = 1,14 (1 ăn 80)",
+      "selected": false
+    },
+    {
+      "id": 4,
+      "text": "Hệ số = 1,2 (1 ăn 84)",
+      "selected": false
+    }
+  ],
+  "chapnhandonvilolanghin": [
+    {
+      "id": 1,
+      "text": "Không chấp nhận",
+      "selected": true
+    },
+    {
+      "id": 2,
+      "text": "Chấp nhận 1d = 1n",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "text": "Quy đổi n qua d theo giá cài đặt",
+      "selected": false
+    }
+  ],
+  "donvitinhde": [
+    {
+      "id": 1,
+      "text": "Chỉ chấp nhận đề tính bằng nghìn",
+      "selected": true
+    },
+    {
+      "id": 2,
+      "text": "Chấp nhận 1 nghìn = 1 điểm",
+      "selected": false
+    }
+  ],
+  "tudongtralaitinkhiquagionhan": [
+    {
+      "id": 1,
+      "text": "Không trả lại",
+      "selected": true
+    },
+    {
+      "id": 2,
+      "text": "Có",
+      "selected": false
+    }
+  ],
+  "gioihannhan1so": [
+    {
+      "id": 1,
+      "text": "Không",
+      "selected": true
+    },
+    {
+      "id": 2,
+      "text": "Có",
+      "selected": false
+    }
+  ],
+  "khachgiulaicophan": [
+    {
+      "id": 1,
+      "text": "Không",
+      "selected": true
+    },
+    {
+      "id": 2,
+      "text": "Có",
+      "selected": false
+    }
+  ],
+  "tudongchuyenditinden": [
+    {
+      "id": 1,
+      "text": "Không tự động chuyển",
+      "selected": true
+    },
+    {
+      "id": 2,
+      "text": "Chuyển đi theo %",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "text": "Chuyển nguyên nội dung",
+      "selected": false
+    }
+  ],
+  "tudongnhantinchodlkhihetgionhan": [
+    {
+      "id": 1,
+      "text": "Không tự động",
+      "selected": true
+    },
+    {
+      "id": 2,
+      "text": "Tự động báo",
+      "selected": false
+    }
+  ],
+  "sonhaylotrathuongtoida": [
+    {
+      "id": 1,
+      "text": "1 Nháy",
+      "selected": false
+    },
+    {
+      "id": 2,
+      "text": "2 Nháy",
+      "selected": false
+    },
+    {
+      "id": 3,
+      "text": "3 Nháy",
+      "selected": false
+    },
+    {
+      "id": 4,
+      "text": "4 Nháy",
+      "selected": true
+    },
+    {
+      "id": 5,
+      "text": "5 Nháy",
+      "selected": false
+    },
+    {
+      "id": 6,
+      "text": "6 Nháy",
+      "selected": false
+    }
+  ]
+}

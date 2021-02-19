@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:background="@drawable/border_row_title"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="TT"
+        android:textColor="@color/blue_2"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvNhanVe"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:background="@drawable/border_row_title"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Tên khách"
+        android:textColor="@color/blue_2"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvTitleNoCu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row_title"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Nợ cũ (Nghìn)"
+        android:textColor="@color/blue_2"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvTitlePhatSinh"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row_title"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Phát sinh (Nghìn)"
+        android:textColor="@color/blue_2"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvTitleConLai"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row_title"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Còn lại (Nghìn)"
+        android:textColor="@color/blue_2"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+</TableRow>

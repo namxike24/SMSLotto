@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smsanalytic.lotto.ui.debt.DebtOfAccountActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/btnBack"
+            android:orientation="vertical">
+
+            <TextView
+                  android:fontFamily="sans-serif-medium"
+                android:id="@+id/tvGroupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Tổng hợp công nợ"
+                android:textColor="@color/line_1_gray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/tvAccountName"
+               android:layout_marginEnd="5dp"
+               android:layout_marginBottom="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="5dp"
+                 android:fontFamily="sans-serif-medium"
+               android:textSize="16sp"
+               android:textColor="@color/back_1"
+               android:text="Khách hàng:Nguyen Cong Tai"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <RelativeLayout
+               android:padding="10dp"
+               android:background="@drawable/bg_border_gray_full_3dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <Button
+                   android:id="@+id/btnNhanTinChotCN"
+                   android:layout_centerHorizontal="true"
+                   android:text="Nhắn tin chốt công nợ"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <RelativeLayout
+                   android:id="@+id/rlKhoanThu"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/btnNhanTinChotCN"
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp">
+                   <TextView
+                       android:id="@+id/tvkhoanthu"
+                       android:layout_centerVertical="true"
+                         android:fontFamily="sans-serif-medium"
+                       android:textColor="@color/blue_3"
+                       android:textSize="14sp"
+                       android:text="Thêm khoản thu:"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+                   <com.smsanalytic.lotto.common.CurrencyEditText
+                       android:id="@+id/cetTienThu"
+                       android:layout_toStartOf="@id/btnLuuKhoanThu"
+                       android:textSize="14sp"
+                       android:textColor="@color/back_1"
+                       android:hint="Số tiền"
+                       android:layout_centerVertical="true"
+                       android:layout_toEndOf="@+id/tvkhoanthu"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   <Button
+                       android:id="@+id/btnLuuKhoanThu"
+                       android:layout_alignParentEnd="true"
+                       android:layout_width="wrap_content"
+                       android:text="Lưu"
+                       android:layout_height="wrap_content"/>
+               </RelativeLayout>
+               <RelativeLayout
+                   android:orientation="horizontal"
+                   android:layout_marginTop="10dp"
+                   android:layout_below="@+id/rlKhoanThu"
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp">
+                   <TextView
+                       android:id="@+id/tvkhoanchi"
+                       android:layout_centerVertical="true"
+                         android:fontFamily="sans-serif-medium"
+                       android:textColor="@color/red"
+                       android:textSize="14sp"
+                       android:text="Thêm khoản chi:"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+                   <com.smsanalytic.lotto.common.CurrencyEditText
+                       android:id="@+id/cetTienChi"
+                       android:layout_toStartOf="@id/btnLuuKhoanChi"
+                       android:textSize="14sp"
+                       android:textColor="@color/back_1"
+                       android:hint="Số tiền"
+                       android:layout_centerVertical="true"
+                       android:layout_toEndOf="@+id/tvkhoanchi"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   <Button
+                       android:id="@+id/btnLuuKhoanChi"
+                       android:layout_alignParentEnd="true"
+                       android:layout_width="wrap_content"
+                       android:text="Lưu"
+                       android:layout_height="wrap_content"/>
+               </RelativeLayout>
+           </RelativeLayout>
+           <TextView
+               android:id="@+id/tv_donvi"
+               android:layout_gravity="end"
+               android:layout_marginBottom="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="5dp"
+                 android:fontFamily="sans-serif-medium"
+               android:textSize="16sp"
+               android:textColor="@color/back_1"
+               android:text="ĐVT: Nghìn đồng"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TableLayout
+               android:id="@+id/tbChiTietCN"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:layout_gravity="start"
+               android:layout_marginBottom="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="5dp"
+                 android:fontFamily="sans-serif-medium"
+               android:textSize="16sp"
+               android:textColor="@color/red"
+               android:text="Chú ý"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/tvNote"
+               android:textColor="@color/back_1"
+               android:textSize="14sp"
+               android:padding="10dp"
+               android:background="@drawable/bg_border_gray_full_3dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text=""/>
+       </LinearLayout>
+   </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

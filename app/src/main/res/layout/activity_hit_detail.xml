@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smsanalytic.lotto.ui.smsDetail.HitDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/tvGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/btnBack"
+            android:singleLine="true"
+            android:text="Chi tiết tin nhắn:"
+            android:textColor="@color/line_1_gray"
+            android:textSize="16sp"
+             android:fontFamily="sans-serif-medium" />
+    </RelativeLayout>
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginEnd="8dp"
+              android:layout_marginBottom="3dp"
+              android:text="Tin nhắn gốc"
+              android:textColor="@color/back_1"
+              android:textSize="14sp"
+               android:fontFamily="sans-serif-medium" />
+
+          <TextView
+              android:id="@+id/tvTinGoc"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginEnd="8dp"
+              android:background="@drawable/bg_border_gray_3dp"
+              android:padding="10dp"
+              android:textColor="@color/back_1"
+              android:textSize="14sp" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="16dp"
+              android:layout_marginEnd="8dp"
+              android:layout_marginBottom="3dp"
+              android:text="Tin sau khi xử lý:"
+              android:textColor="@color/back_1"
+              android:textSize="14sp"
+               android:fontFamily="sans-serif-medium" />
+
+
+          <TextView
+              android:hint="Tin chưa được xử lý"
+              android:id="@+id/tvTinSauXuLy"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginEnd="8dp"
+              android:background="@drawable/bg_border_gray_3dp"
+              android:padding="10dp"
+              android:textColor="@color/back_1"
+              android:textSize="14sp" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="16dp"
+              android:layout_marginEnd="8dp"
+              android:layout_marginBottom="3dp"
+              android:text="Chi tiết:"
+              android:textColor="@color/back_1"
+              android:textSize="14sp"
+               android:fontFamily="sans-serif-medium" />
+
+
+          <TextView
+              android:id="@+id/tvChiTiet"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="8dp"
+              android:layout_marginEnd="8dp"
+              android:background="@drawable/bg_border_gray_3dp"
+              android:padding="10dp"
+              android:textColor="@color/back_1"
+              android:textSize="14sp" />
+      </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+</LinearLayout>

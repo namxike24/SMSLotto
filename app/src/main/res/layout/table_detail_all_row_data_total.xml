@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17"
+        android:background="@drawable/border_row"
+        android:gravity="left"
+        android:padding="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Cộng tiền"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+      />
+
+    <TextView
+        android:id="@+id/tvNhanVe"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textColor="@color/back_1"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvChuyenDi"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/back_1"
+        android:textSize="13sp" />
+
+</TableRow>

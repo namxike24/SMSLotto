@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smsanalytic.lotto.ui.balance.ChiTietCanChuyenActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/tvGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/btnBack"
+            android:singleLine="true"
+            android:text="Chi tiết Cân Chuyển"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+              android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/btnChuyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:text="chuyển"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+              android:fontFamily="sans-serif-medium" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/lnMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="1. Báo cáo nhanh"
+                android:textColor="@color/back_1"
+                android:textSize="14sp"
+                  android:fontFamily="sans-serif-medium" />
+
+            <TableLayout
+                android:id="@+id/baoCaoNhanhTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2. Chi tiết từng loại hình"
+                android:textColor="@color/back_1"
+                android:textSize="14sp"
+                  android:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:id="@+id/rlDe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/orange_1"
+                    android:gravity="center"
+                    android:text="Đặt Biệt(Đề)"
+                    android:textColor="@color/back_1"
+                      android:fontFamily="sans-serif-medium" />
+
+                <TableLayout
+                    android:id="@+id/tableDB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlLoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/orange_1"
+                    android:gravity="center"
+                    android:text="Loto (Lô)"
+                    android:textColor="@color/back_1"
+                      android:fontFamily="sans-serif-medium" />
+
+                <TableLayout
+                    android:id="@+id/tableLoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlBaSo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/orange_1"
+                    android:gravity="center"
+                    android:text="Ba Số"
+                    android:textColor="@color/back_1"
+                      android:fontFamily="sans-serif-medium" />
+
+                <TableLayout
+                    android:id="@+id/tableBaSo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlXien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/orange_1"
+                    android:gravity="center"
+                    android:text="Xiên"
+                    android:textColor="@color/back_1"
+                      android:fontFamily="sans-serif-medium" />
+
+                <TableLayout
+                    android:id="@+id/tableXien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rlDauDB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/orange_1"
+                    android:gravity="center"
+                    android:text="Đầu Đặc Biệt"
+                    android:textColor="@color/back_1"
+                      android:fontFamily="sans-serif-medium" />
+
+                <TableLayout
+                    android:id="@+id/tableDauDB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rlDauGiaiNhat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/orange_1"
+                    android:gravity="center"
+                    android:text="Đầu Giải Nhất(G1)"
+                    android:textColor="@color/back_1"
+                      android:fontFamily="sans-serif-medium" />
+
+                <TableLayout
+                    android:id="@+id/tableDauGiaiNhat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlDuoiGiaiNhat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/orange_1"
+                    android:gravity="center"
+                    android:text="Đuôi Giải Nhất(G1)"
+                    android:textColor="@color/back_1"
+                      android:fontFamily="sans-serif-medium" />
+
+                <TableLayout
+                    android:id="@+id/tableDuoiGiaiNhat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></TableLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvError"
+        android:background="@drawable/bg_border_gray_3dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

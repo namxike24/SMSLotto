@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnDataAll"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="5dp"
+        android:text="Chi tiết bảng tổng hợp"
+        android:textColor="@color/back_1"
+        android:textSize="16sp" />
+
+    <TableLayout
+        android:id="@+id/tbTotalDetailAll"
+        android:stretchColumns="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </TableLayout>
+
+</LinearLayout>

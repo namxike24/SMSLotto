@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smsanalytic.lotto.ui.debt.DebtDetailFragment">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/back_1"
+        android:text="Tùy chọn bộ lọc"
+          android:fontFamily="sans-serif-medium"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:background="@drawable/bg_border_gray_full_3dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/back_1"
+                android:text="Chọn ngày: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:id="@+id/rlDate"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_border_gray_3dp"
+                android:orientation="horizontal"
+                android:padding="7dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05-04-2020"
+                    android:textColor="@color/back_1"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ic_down_arrow"
+                    android:tint="@color/back_1" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:minWidth="50dp"
+                android:singleLine="true"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/rlAccount"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tv_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên khách hàng:"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/back_1"
+                android:textSize="16sp" />
+            <LinearLayout
+android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/rlAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_border_gray_3dp"
+                android:orientation="horizontal"
+                android:padding="7dp"
+                android:visibility="visible">
+                <TextView
+
+                    android:id="@+id/tvAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Chọn khách hàng"
+                    android:textColor="@color/back_1"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/ivArrowChonKH"
+                    android:layout_width="12dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ic_down_arrow"
+                    android:tint="@color/back_1" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btnLayDuLieu"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
+            android:text="Lấy dữ liệu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/back_1"
+        android:text="Chi tiết bảng công nợ"
+          android:fontFamily="sans-serif-medium"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TableLayout
+        android:id="@+id/tbCongNo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:text="Nhắn tin báo công nợ \n (Cho tất cả khách hàng)"
+        android:id="@+id/btnCongNoAll"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

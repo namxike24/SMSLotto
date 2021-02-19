@@ -1,0 +1,676 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+
+    android:orientation="vertical"
+    tools:context="com.smsanalytic.lotto.ui.accountList.AccountInfoFragment"
+    android:focusable="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_account_name"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp"
+                     android:fontFamily="sans-serif-medium" />
+
+                <EditText
+                    android:theme="@style/Theme.App.Base"
+                    android:id="@+id/edt_account_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_enter_account_name"
+                    android:singleLine="true"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_you_call_them"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp"
+                     android:fontFamily="sans-serif-medium" />
+
+                <EditText
+                    android:theme="@style/Theme.App.Base"
+                    android:id="@+id/edt_you_call_them"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_you_call_them_examle"
+                    android:singleLine="true"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_them_call_you"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp"
+                     android:fontFamily="sans-serif-medium" />
+
+                <EditText
+                    android:theme="@style/Theme.App.Base"
+                    android:id="@+id/edt_them_call_you"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_you_call_them_examle"
+                    android:singleLine="true"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tv_phone_info"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp"
+                     android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/btnAddContact"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_border_green_3dp"
+                    android:gravity="center"
+                    android:text="@string/tv_contact"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_border_gray_3dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlAddPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:theme="@style/Theme.App.Base"
+                        android:inputType="phone"
+                        android:id="@+id/edt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toStartOf="@+id/btnAddPhone"
+                        android:hint="@string/hint_enter_phone_name"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/btnAddPhone"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_border_green_3dp"
+                        android:gravity="center"
+                        android:text="@string/tv_add"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPhoneList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlAddPhone"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Lựa chọn đối tượng khách hàng"
+                android:textColor="@color/back_1"
+                android:textSize="14sp"
+                 android:fontFamily="sans-serif-medium" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_border_gray_3dp">
+
+                <RadioGroup
+                    android:id="@+id/rg_account_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rbStaff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Đại lý (Khách)" />
+
+                    <RadioButton
+                        android:id="@+id/rbBoss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Công ty(Chủ)" />
+
+                    <RadioButton
+                        android:id="@+id/rbStaffAndBoss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vừa đại lý vừa công ty" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_title_caidat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Cài đặt Hoa hồng và Trả thưởng (đ=đồng)"
+                android:textColor="@color/back_1"
+                android:textSize="14sp"
+                 android:fontFamily="sans-serif-medium" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:background="@drawable/border_row"
+                        android:gravity="left"
+                        android:padding="3dp"
+                        android:text="Loại"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp"
+                         android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:background="@drawable/border_row"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Tiền đánh"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp"
+                         android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_row"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Tiền ăn"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp"
+                         android:fontFamily="sans-serif-medium" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:background="@drawable/border_row"
+                        android:gravity="left"
+                        android:padding="6dp"
+                        android:text="Đặc Biệt (Đề)"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp"
+                         android:fontFamily="sans-serif-medium" />
+
+                    <com.smsanalytic.lotto.common.CurrencyEditText
+                        android:id="@+id/cdt_de_danh"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:background="@drawable/border_row"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="70.000.d"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp" />
+
+                    <com.smsanalytic.lotto.common.CurrencyEditText
+                        android:id="@+id/cdt_de_an"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:background="@drawable/border_row"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="70.000.d"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:background="@drawable/border_row"
+                        android:gravity="left"
+                        android:padding="6dp"
+                        android:text="Giải nhất"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp"
+                         android:fontFamily="sans-serif-medium" />
+
+                    <com.smsanalytic.lotto.common.CurrencyEditText
+                        android:id="@+id/cdt_giainhat_danh"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:background="@drawable/border_row"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="70.000.d"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp" />
+
+                    <com.smsanalytic.lotto.common.CurrencyEditText
+                        android:id="@+id/cdt_giainhat_an"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:background="@drawable/border_row"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="70.000.d"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:background="@drawable/border_row"
+                        android:gravity="left"
+                        android:padding="6dp"
+                        android:text="Lô (Bao lô 27 giải)"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp"
+                         android:fontFamily="sans-serif-medium" />
+
+                    <com.smsanalytic.lotto.common.CurrencyEditText
+                        android:id="@+id/cdt_lo_danh"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:background="@drawable/border_row"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="70.000.d"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp" />
+
+                    <com.smsanalytic.lotto.common.CurrencyEditText
+                        android:id="@+id/cdt_lo_an"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:background="@drawable/border_row"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="70.000.d"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:background="@drawable/border_row"
+                        android:gravity="left"
+                        android:padding="6dp"
+                        android:text="Ba Càng (3 số)"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp"
+                         android:fontFamily="sans-serif-medium" />
+
+                    <com.smsanalytic.lotto.common.CurrencyEditText
+                        android:id="@+id/cdt_c3_danh"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:background="@drawable/border_row"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="70.000.d"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp" />
+
+                    <com.smsanalytic.lotto.common.CurrencyEditText
+                        android:id="@+id/cdt_c3_an"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:background="@drawable/border_row"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="70.000.d"
+                        android:textColor="@color/back_1"
+                        android:textSize="14sp" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/border_row"
+                    android:padding="6dp"
+                    android:text="Thưởng áp man ba càng.\n (Chỉ trùng đề. Không trùng càng)"
+                    android:textColor="@color/back_1"
+                     android:fontFamily="sans-serif-medium" />
+
+                <com.smsanalytic.lotto.common.CurrencyEditText
+                    android:id="@+id/cdt_thuongapman_an"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="center"
+                    android:text="70.000.d"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="left"
+                    android:padding="6dp"
+                    android:text="Càng giữa"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp"
+                     android:fontFamily="sans-serif-medium" />
+
+                <com.smsanalytic.lotto.common.CurrencyEditText
+                    android:id="@+id/cdt_cangiua_danh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="70.000.d"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp" />
+
+                <com.smsanalytic.lotto.common.CurrencyEditText
+                    android:id="@+id/cdt_cangiua_an"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="70.000.d"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/border_row"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="Loto Xiên (Lô xiên)"
+                android:textColor="@color/back_1"
+                android:textSize="14sp"
+                 android:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="left"
+                    android:padding="6dp"
+                    android:text="Xiên 2"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp"
+                     android:fontFamily="sans-serif-medium" />
+
+                <com.smsanalytic.lotto.common.CurrencyEditText
+                    android:id="@+id/cdt_x2_danh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="70.000.d"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp" />
+
+                <com.smsanalytic.lotto.common.CurrencyEditText
+                    android:id="@+id/cdt_x2_an"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="70.000.d"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="left"
+                    android:padding="6dp"
+                    android:text="Xiên 3"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp"
+                     android:fontFamily="sans-serif-medium" />
+
+                <com.smsanalytic.lotto.common.CurrencyEditText
+                    android:id="@+id/cdt_x3_danh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="70.000.d"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp" />
+
+                <com.smsanalytic.lotto.common.CurrencyEditText
+                    android:id="@+id/cdt_x3_an"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="70.000.d"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="left"
+                    android:padding="6dp"
+                    android:text="Xiên 4"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp"
+                     android:fontFamily="sans-serif-medium" />
+
+                <com.smsanalytic.lotto.common.CurrencyEditText
+                    android:id="@+id/cdt_x4_danh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="70.000.d"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp" />
+
+                <com.smsanalytic.lotto.common.CurrencyEditText
+                    android:id="@+id/cdt_x4_an"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_row"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="70.000.d"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

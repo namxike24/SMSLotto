@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/processSmsEvent"
+        android:title="Xử lý tin nhắn này"/>
+    <item
+        android:id="@+id/removeSmsEvent"
+        android:title="Xóa tin này"/>
+</menu>

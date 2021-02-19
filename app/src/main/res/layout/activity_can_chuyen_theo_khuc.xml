@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smsanalytic.lotto.ui.balance.CanChuyenTheoKhucActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_toStartOf="@+id/btnChuyen"
+            android:id="@+id/tvGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/btnBack"
+            android:singleLine="true"
+            android:text="Cân chuyển theo khúc"
+            android:textColor="@color/line_1_gray"
+            android:textSize="16sp"
+              android:fontFamily="sans-serif-medium" />
+        <TextView
+            android:id="@+id/btnChuyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:text="chuyển"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+              android:fontFamily="sans-serif-medium" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnHinhThucCanChuyen"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Lựa chọn hình thức cân chuyển"
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp"
+                      android:fontFamily="sans-serif-medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_border_gray_full_3dp"
+                    android:padding="5dp">
+
+                    <RadioGroup
+                        android:id="@+id/rg_account_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <RadioButton
+                            android:id="@+id/rbChuyenTheoTongNhanVe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Chuyển đi theo tổng nhận về" />
+
+                        <RadioButton
+                            android:id="@+id/rbChuyenTheoSoTon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chuyển đi theo tổng số lượng đang tồn" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="1. Thiết lập thông số để cân"
+                android:textColor="@color/back_1"
+                android:textSize="14sp"
+                  android:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_border_gray_full_3dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Khúc 1: Từ"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <EditText
+                        android:id="@+id/etKhuc1Tu"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/bg_border_gray_3dp"
+                        android:inputType="number"
+                        android:padding="3dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Đến"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <EditText
+                        android:id="@+id/etKhuc1Den"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/bg_border_gray_3dp"
+                        android:inputType="number"
+                        android:padding="3dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Giữ lại Max"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.smsanalytic.lotto.common.CurrencyEditText
+                            android:id="@+id/cetKhuc1GiuaMax"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="2dp"
+                            android:layout_toStartOf="@+id/tvPercent1"
+                            android:background="@drawable/bg_border_gray_3dp"
+                            android:inputType="number"
+                            android:padding="3dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:textColor="@color/back_1"
+                            android:id="@+id/tvPercent1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:padding="5dp"
+                            android:text="%" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Khúc 2: Từ"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <EditText
+                        android:id="@+id/etKhuc2Tu"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/bg_border_gray_3dp"
+                        android:inputType="number"
+                        android:padding="3dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Đến"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <EditText
+                        android:id="@+id/etKhuc2Den"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/bg_border_gray_3dp"
+                        android:inputType="number"
+                        android:padding="3dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Giữ lại Max"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.smsanalytic.lotto.common.CurrencyEditText
+                            android:id="@+id/cetKhuc2GiuaMax"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="2dp"
+                            android:layout_toStartOf="@+id/tvPercent2"
+                            android:background="@drawable/bg_border_gray_3dp"
+                            android:inputType="number"
+                            android:padding="3dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:textColor="@color/back_1"
+                            android:id="@+id/tvPercent2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:padding="5dp"
+                            android:text="%" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Khúc 3: Từ"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <EditText
+                        android:id="@+id/etKhuc3Tu"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/bg_border_gray_3dp"
+                        android:inputType="number"
+                        android:padding="3dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Đến"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <EditText
+                        android:id="@+id/etKhuc3Den"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/bg_border_gray_3dp"
+                        android:inputType="number"
+                        android:padding="3dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Giữ lại Max"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.smsanalytic.lotto.common.CurrencyEditText
+                            android:id="@+id/cetKhuc3GiuaMax"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="2dp"
+                            android:layout_toStartOf="@+id/tvPercent3"
+                            android:background="@drawable/bg_border_gray_3dp"
+                            android:inputType="number"
+                            android:padding="3dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:textColor="@color/back_1"
+                            android:id="@+id/tvPercent3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:padding="5dp"
+                            android:text="%" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Khúc 4: Từ"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <EditText
+                        android:id="@+id/etKhuc4Tu"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/bg_border_gray_3dp"
+                        android:inputType="number"
+                        android:padding="3dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Đến"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <EditText
+                        android:id="@+id/etKhuc4Den"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/bg_border_gray_3dp"
+                        android:inputType="number"
+                        android:padding="3dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Giữ lại Max"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.smsanalytic.lotto.common.CurrencyEditText
+                            android:id="@+id/cetKhuc4GiuaMax"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="2dp"
+                            android:layout_toStartOf="@+id/tvPercent4"
+                            android:background="@drawable/bg_border_gray_3dp"
+                            android:inputType="number"
+                            android:padding="3dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:textColor="@color/back_1"
+                            android:id="@+id/tvPercent4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:padding="5dp"
+                            android:text="%" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Khúc 5: Từ"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <EditText
+                        android:id="@+id/etKhuc5Tu"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/bg_border_gray_3dp"
+                        android:inputType="number"
+                        android:padding="3dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Đến"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <EditText
+                        android:id="@+id/etKhuc5Den"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/bg_border_gray_3dp"
+                        android:inputType="number"
+                        android:padding="3dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Giữ lại Max"
+                        android:textColor="@color/back_1"
+                        android:textSize="12sp"
+                          android:fontFamily="sans-serif-medium" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.smsanalytic.lotto.common.CurrencyEditText
+                            android:id="@+id/cetKhuc5GiuaMax"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="2dp"
+                            android:layout_toStartOf="@+id/tvPercent5"
+                            android:background="@drawable/bg_border_gray_3dp"
+                            android:inputType="number"
+                            android:padding="3dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:textColor="@color/back_1"
+                            android:id="@+id/tvPercent5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:padding="5dp"
+                            android:text="%" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="2. Giữ lại ngoại lệ"
+                android:textColor="@color/back_1"
+                android:textSize="14sp"
+                  android:fontFamily="sans-serif-medium" />
+
+            <EditText
+                android:id="@+id/etNgoaiLe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_border_gray_full_3dp"
+                android:gravity="start"
+                android:hint="Nhập số ngoại lệ ở đây, ví dụ: Đề đầu 1 x 100n, toonrg8 x 50n. Lô 22 68 86 x 200d"
+                android:minHeight="80dp"
+                android:padding="5dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="3. Lựa chọn loại hình để cân"
+                android:textColor="@color/back_1"
+                android:textSize="14sp"
+                  android:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_border_gray_full_3dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Chọn loại hình: "
+                    android:textColor="@color/back_1"
+                    android:textSize="14sp"
+                      android:fontFamily="sans-serif-medium" />
+
+                <RelativeLayout
+                    android:id="@+id/rlLoai"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_border_gray_3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTitleType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Đề"
+                        android:textColor="@color/back_1"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_down_arrow"
+                        android:tint="@color/back_1" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnLayGiuLieu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Lấy dữ liệu"
+                    android:textColor="@color/back_1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="4. Bảng chi tiết"
+                android:textColor="@color/back_1"
+                android:textSize="14sp"
+                  android:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:id="@+id/rlDe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/titleTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/orange_1"
+                    android:gravity="center"
+                    android:text="Đuôi Đặt Biệt(Đề)"
+                    android:textColor="@color/back_1"
+                      android:fontFamily="sans-serif-medium" />
+
+                <TableLayout
+                    android:id="@+id/tableChiTiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></TableLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="5. Hướng dẫn"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                  android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/tv_huongdan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_border_gray_full_3dp"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

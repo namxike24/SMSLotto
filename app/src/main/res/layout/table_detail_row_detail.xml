@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvSTT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="STT"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-medium" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:background="@drawable/border_row">
+
+        <TextView
+            android:id="@+id/tvSo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Số"
+            android:textColor="@color/back_1"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium" />
+        <TextView
+            android:id="@+id/tvNhay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="1"
+            android:visibility="gone"
+            android:layout_marginBottom="-2dp"
+            android:textColor="@color/red"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTien"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Nghìn"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+
+         />
+
+</TableRow>

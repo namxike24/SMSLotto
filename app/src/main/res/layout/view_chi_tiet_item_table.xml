@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:background="@drawable/border_row"
+        android:textColor="@color/back_1"
+        android:id="@+id/tvNo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"
+        android:gravity="center" />
+
+    <TextView
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:background="@drawable/border_row"
+          android:fontFamily="sans-serif-medium"
+        android:id="@+id/tvNumber"
+        android:layout_width="0dp"
+        android:textColor="@color/back_1"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:gravity="center" />
+
+    <TextView
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:background="@drawable/border_row"
+        android:textColor="@color/back_1"
+        android:id="@+id/tvNhanVe"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:gravity="end" />
+
+    <TextView
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:background="@drawable/border_row"
+        android:textColor="@color/back_1"
+        android:id="@+id/tvDaChuyen"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:gravity="end" />
+    <TextView
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:background="@drawable/border_row"
+        android:textColor="@color/back_1"
+        android:id="@+id/tvSeChuyen"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:gravity="end" />
+
+    <TextView
+        android:padding="4dp"
+        android:textSize="13sp"
+        android:background="@drawable/border_row"
+        android:textColor="@color/back_1"
+        android:id="@+id/tvConLai"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:gravity="end" />
+
+</TableRow>

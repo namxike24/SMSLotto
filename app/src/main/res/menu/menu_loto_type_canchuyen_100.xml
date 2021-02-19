@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/itemDe"
+        android:title="Đề"/>
+    <item
+        android:id="@+id/itemLo"
+        android:title="Lô"/>
+    <item
+        android:id="@+id/itemBaCang"
+        android:title="Ba Càng"/>
+    <item
+        android:id="@+id/itemDitNhat"
+        android:title="Đit Nhất"/>
+    <item
+        android:id="@+id/itemDauNhat"
+        android:title="Đầu Nhất"/>
+    <item
+        android:id="@+id/itemDauDB"
+        android:title="Đầu ĐB"/>
+</menu>

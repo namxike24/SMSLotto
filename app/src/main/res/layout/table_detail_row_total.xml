@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:background="@drawable/border_row"
+        android:gravity="left"
+        android:padding="4dp"
+        android:text="Loại"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvTienDanh"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Tiền đánh"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvTienAn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Tiền ăn"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Kết quả"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+</TableRow>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_sms_process">
+
+    <fragment
+        android:id="@+id/nav_sms_process"
+        android:name="com.smsanalytic.lotto.ui.smsProcess.SmsProcessFragment"
+        android:label="@string/tv_process_sms"
+        tools:layout="@layout/fragment_sms_process" />
+
+    <fragment
+        android:id="@+id/nav_sms_management"
+        android:name="com.smsanalytic.lotto.ui.smsManagement.SmsManagementFragment"
+        android:label="@string/tv_sms_management"
+        tools:layout="@layout/fragment_sms_management" />
+
+    <fragment
+        android:id="@+id/nav_sms_social"
+        android:name="com.smsanalytic.lotto.ui.smsSocial.SmsSocialFragment"
+        android:label="@string/tv_sms_social"
+        tools:layout="@layout/fragment_sms_social" />
+
+    <fragment
+        android:id="@+id/nav_document"
+        android:name="com.smsanalytic.lotto.ui.document.DocumentFragment"
+        android:label="@string/tv_document"
+        tools:layout="@layout/fragment_document" />
+
+    <fragment
+        android:id="@+id/nav_account_list"
+        android:name="com.smsanalytic.lotto.ui.accountList.AccountListFragment"
+        android:label="@string/tv_account_list"
+        tools:layout="@layout/fragment_account_list" />
+
+    <fragment
+        android:id="@+id/nav_balance"
+        android:name="com.smsanalytic.lotto.ui.balance.BalanceFragment"
+        android:label="@string/tv_balance"
+        tools:layout="@layout/fragment_balance" />
+
+    <fragment
+        android:id="@+id/nav_xsmb"
+        android:name="com.smsanalytic.lotto.ui.xsmb.SXMBFragment"
+        android:label="@string/tv_xsbm"
+        tools:layout="@layout/fragment_sxmb" />
+    <fragment
+        android:id="@+id/nav_debt"
+        android:name="com.smsanalytic.lotto.ui.debt.DebtFragment"
+        android:label="@string/tv_debt"
+        tools:layout="@layout/fragment_debt" />
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.smsanalytic.lotto.ui.setting.SettingFragment"
+        android:label="@string/tv_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/nav_character"
+        android:name="com.smsanalytic.lotto.ui.character.CharacterFragment"
+        android:label="@string/tv_character"
+        tools:layout="@layout/fragment_character" />
+    <fragment
+        android:id="@+id/nav_sms_detail"
+        android:name="com.smsanalytic.lotto.ui.smsDetail.SmsOfAccountDetailFragment"
+        android:label="@string/tv_sms_detail"
+        tools:layout="@layout/fragment_sms_detail" />
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.smsanalytic.lotto.ui.register.RegisterFragment"
+        android:label="@string/tv_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/nav_async"
+        android:name="com.smsanalytic.lotto.ui.asyncData.AsyncDataFragment"
+        android:label="@string/tv_async"
+        tools:layout="@layout/fragment_async_data" />
+    <fragment
+        android:id="@+id/nav_update"
+        android:name="com.smsanalytic.lotto.ui.updateversion.UpdateVersionFragment"
+        android:label="@string/tv_update_app"
+        tools:layout="@layout/fragment_update_version" />
+
+</navigation>

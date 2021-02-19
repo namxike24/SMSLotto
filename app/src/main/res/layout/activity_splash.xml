@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="16sp">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Vui lòng chờ đợi trong giây lát...Để kết nối đến ứng dụng thành công hãy chắc chắn rằng bạn đã bật wifi hoặc 3G"
+            android:textColor="@color/back_1"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

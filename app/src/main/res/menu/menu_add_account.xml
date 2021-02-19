@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/addAccountEvent"
+        android:title="Lưu khách hàng"/>
+    <item
+        android:id="@+id/updateAccountEvent"
+        android:title="Cập nhật liên hệ"/>
+    <item
+        android:id="@+id/deleteEvent"
+        android:title="Xóa"/>
+</menu>

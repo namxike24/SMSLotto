@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.smsanalytic.lotto.ui.setting.SettingKyTuSMSGuiDiActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_toEndOf="@+id/btnBack"
+            android:layout_centerVertical="true"
+             android:fontFamily="sans-serif-medium"
+            android:id="@+id/tvGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Cài đặt tin nhắn"
+            android:textColor="@color/line_1_gray"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+             android:fontFamily="sans-serif-medium"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/back_1"
+            android:textSize="16sp"
+            android:text="Cài đặt độ dài mỗi tin nhắn chuyển đi"/>
+        <LinearLayout
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_border_gray_full_3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/rg_account_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/rbTinDai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Chuyển tin nhắn dài" />
+
+                <RadioButton
+                    android:id="@+id/rb160"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cắt tin nhắn 160 ký tự/tin" />
+
+                <RadioButton
+                    android:id="@+id/rb320"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cắt tin nhắn 320 ký tự/tin" />
+                <RadioButton
+                    android:id="@+id/rb480"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cắt tin nhắn 480 ký tự/tin" />
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:fontFamily="sans-serif-medium"
+            android:text="Chú ý"
+            android:textSize="16sp"
+            android:textColor="@color/red"/>
+        <TextView
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@drawable/bg_border_gray_full_3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/back_1"
+            android:textSize="14sp"
+            android:text="- Không nên để tin nhăn chuyển đi quá dài vì nguyên nhân lỗi mạng có thể dẫn đến người nhận tin nhắn bị thiếu tin (tin nhắn bị mất khúc sau)\n Tốt nhất nên để 'tin nhắn 320 ký tự'. Nếu để tin nhắn dài thì yêu cầu phải dùng máy đời cao và luôn kết nối internet trong thời gian chuyển tin"/>
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="Cập Nhật"
+        android:id="@+id/btnAdd"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_border_green_3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</RelativeLayout>

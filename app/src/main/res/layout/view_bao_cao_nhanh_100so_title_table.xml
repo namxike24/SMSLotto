@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row"
+        android:gravity="start"
+        android:padding="4dp"
+        android:text="Loại"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvNhanVe"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Số con nhận về"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvSoLonNhat"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Số lớn nhất"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvSoNhoNhat"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Số nhỏ nhất"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvTinhTrang"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Tình trạng"
+        android:textColor="@color/back_1"
+        android:textSize="13sp"
+          android:fontFamily="sans-serif-medium" />
+
+</TableRow>

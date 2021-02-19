@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.17"
+        android:background="@drawable/border_row"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Loại"
+        android:textColor="@color/back_1"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-medium" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_row"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Nhận về"
+            android:textColor="@color/back_1"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNhanVeDiem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_row"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Điểm"
+                android:textColor="@color/back_1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvNhanVeThanhTien"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_row"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Thành tiền"
+                android:textColor="@color/back_1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_row"
+            android:gravity="center"
+            android:padding="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Chuyển đi"
+            android:textColor="@color/back_1"
+            android:textSize="12sp"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvChuyenDiDiem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_row"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Điểm"
+                android:textColor="@color/back_1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvChuyenDiThanhTien"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_row"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Thành tiền"
+                android:textColor="@color/back_1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</TableRow>
