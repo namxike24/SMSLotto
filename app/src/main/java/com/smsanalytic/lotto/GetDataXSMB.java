@@ -98,7 +98,7 @@ public class GetDataXSMB implements Runnable {
             //&& (dtVietNam.getHourOfDay() == 18 && dtVietNam.getMinuteOfDay() > 15 && dtVietNam.getMinuteOfDay() < 45))
             if (DateTimeUtils.convertDateToString(dtVietNam.toDate(), DateTimeUtils.DAY_MONTH_YEAR_FORMAT).equalsIgnoreCase(date)
                     && (dtVietNam.getHourOfDay() == 18 && dtVietNam.getMinuteOfHour() > 15 && dtVietNam.getMinuteOfHour() < 45)) {
-                Element element = Jsoup.connect("https://data.ketqua.net/pre_loads/kq-mb.raw")
+                Element element = Jsoup.connect("https://data.ketqua1.net/pre_loads/kq-mb.raw")
                         .timeout(30000)
                         .userAgent("Mozilla/5.0 (Windows; U; WindowsNT 5.1; en-US; rv1.8.1.6) Gecko/20070725 Firefox/2.0.0.6")
                         .referrer("ttps://data.ketqua.net")
